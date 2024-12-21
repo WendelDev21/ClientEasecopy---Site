@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientEase - Gerencie seus Leads com Facilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        }
+
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #00bfff;
+        color: #fff;
+        }
+
+        .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        }
+
+        .logo img {
+        max-height: 100%; /* Ajusta para caber no header */
+        max-width: 190px; /* Define um tamanho máximo para evitar imagens grandes */
+        height: auto; /* Mantém a proporção */
+        }
+
+        .menu {
+          display: none;
+          flex-direction: column;
+          gap: 10px;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          background: #00bfff;
+          border-radius: 5px;
+          padding: 10px 20px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    
+        .menu a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1rem;
+        }
+    
+        .menu a:hover {
+          text-decoration: underline;
+        }
+    
+        .toggle {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          cursor: pointer;
+        }
+    
+        .toggle span {
+          display: block;
+          width: 25px;
+          height: 3px;
+          background: #fff;
+        }
+    
+        @media (min-width: 768px) {
+          .menu {
+            display: flex;
+            position: static;
+            flex-direction: row;
+            gap: 20px;
+            background: none;
+            box-shadow: none;
+            padding: 0;
+          }
+    
+          .toggle {
+            display: none;
+          }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"><img src="./img/logo/logo1.png" alt="Logo ClientEase" /></a>
+          </div>
+          <div class="toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+        <nav class="menu" id="menu">
+          <a href="#home">Início</a>
+          <a href="#features">Funcionalidades</a>
+          <a href="#pricing">Planos</a>
+          <a href="#testimonials">Depoimentos</a>
+          <a href="#contact">Contato</a>
+
+        </nav>
+      </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Gerencie seus Leads de Forma Simples e Eficiente</h1>
+        <p>Aumente suas vendas e tenha controle total do seu pipeline com a ClientEase.</p>
+        <a href="#cta" class="btn-primary">Comece Gratuitamente</a>
+    </section>
+
+    <!-- Recursos do Produto -->
+    <section id="features" class="features">
+        <h2>Recursos Principais</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Gerenciamento de Leads</h3>
+                <p>Organize leads ativos, pendentes e cancelados em um único lugar.</p>
+            </div>
+            <div class="feature">
+                <h3>Relatórios Exportáveis</h3>
+                <p>Gere relatórios detalhados e exporte-os em PDF com facilidade.</p>
+            </div>
+            <div class="feature">
+                <h3>Envio de E-mails em Massa</h3>
+                <p>Comunique-se de forma eficiente com seus clientes em apenas alguns cliques.</p>
+            </div>
+            <div class="feature">
+                <h3>Integrações Simples</h3>
+                <p>Integre a ClientEase com as principais ferramentas do mercado.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Planos -->
+    <section id="pricing" class="pricing">
+        <h2>Escolha o Plano Ideal para Você</h2>
+        <div class="pricing-grid">
+            <!-- Card do Plano Básico -->
+            <div class="pricing-card">
+                <h3>Plano Básico</h3>
+                <p class="price">R$49/mês</p>
+                <ul>
+                    <li>Gerenciamento de Leads</li>
+                    <li>Relatórios Básicos</li>
+                    <li>Suporte por E-mail</li>
+                </ul>
+                <a href="#" class="btn-primary">Escolher Plano</a>
+            </div>
+    
+            <!-- Card do Plano Intermediário -->
+            <div class="pricing-card">
+                <h3>Plano Intermediário</h3>
+                <p class="price">R$99/mês</p>
+                <ul>
+                    <li>Gerenciamento de Leads</li>
+                    <li>Relatórios Avançados</li>
+                    <li>Envio de E-mails em Massa</li>
+                    <li>Suporte Prioritário</li>
+                </ul>
+                <a href="#" class="btn-primary">Escolher Plano</a>
+            </div>
+    
+            <!-- Card do Plano Completo -->
+            <div class="pricing-card">
+                <h3>Plano Completo</h3>
+                <p class="price">R$199/mês</p>
+                <ul>
+                    <li>Gerenciamento Completo de Leads</li>
+                    <li>Relatórios Exportáveis em PDF</li>
+                    <li>Envio Ilimitado de E-mails</li>
+                    <li>Integrações com Ferramentas</li>
+                    <li>Suporte VIP</li>
+                </ul>
+                <a href="#" class="btn-primary">Escolher Plano</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial">
+            <img src="./img/depoiments/User1.jpeg" alt="Foto de Ana Souza">
+            <p>"A ClientEase transformou nossa forma de gerenciar leads. As vendas cresceram 35%!"</p>
+            <span>- Ana Souza, Gerente de Vendas</span>
+        </div>
+        <div class="testimonial">
+            <img src="./img/depoiments/User2.jpg" alt="Foto de João Silva">
+            <p>"Uma ferramenta indispensável para pequenas e médias empresas. Recomendo!"</p>
+            <span>- João Silva, Diretor Comercial</span>
+        </div>
+    </section>
+
+    <!-- Chamada para Ação -->
+    <section id="cta" class="cta">
+        <h2>Pronto para transformar seu negócio?</h2>
+        <p>Comece agora com um teste gratuito e veja os resultados!</p>
+        <a href="#signup" class="btn-primary2">Começar Agora</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer style="background-color: #333; color: white; padding: 20px 10px; text-align: center;">
+        <!-- Botões Sociais -->
+        <div class="social-buttons" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 15px;">
+            <a href="https://youtube.com" target="_blank" style="text-decoration: none; color: white;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 48 48" width="32" fill="#FFFFFF">
+                    <path d="M43.6 12.2c-.5-1.9-2-3.4-3.9-3.9C36.9 7.6 24 7.6 24 7.6s-12.9 0-15.7.7c-1.9.5-3.4 2-3.9 3.9C4.8 15 4.8 24 4.8 24s0 9 .6 11.8c.5 1.9 2 3.4 3.9 3.9 2.8.7 15.7.7 15.7.7s12.9 0 15.7-.7c1.9-.5 3.4-2 3.9-3.9.6-2.8.6-11.8.6-11.8s0-9-.6-11.8zM20 31.6V16.4L32 24 20 31.6z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" style="text-decoration: none; color: white;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 48 48" width="32" fill="#FFFFFF">
+                    <path d="M34.6 4H13.4C7.9 4 4 7.9 4 13.4v21.2C4 40.1 7.9 44 13.4 44h21.2C40.1 44 44 40.1 44 34.6V13.4C44 7.9 40.1 4 34.6 4zM24 33.4c-5.2 0-9.4-4.2-9.4-9.4s4.2-9.4 9.4-9.4 9.4 4.2 9.4 9.4-4.2 9.4-9.4 9.4zm10.8-18.6c-1.4 0-2.6-1.2-2.6-2.6s1.2-2.6 2.6-2.6 2.6 1.2 2.6 2.6-1.2 2.6-2.6 2.6z"/>
+                    <circle cx="24" cy="24" r="5.8"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" style="text-decoration: none; color: white;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 0 48 48" width="32" fill="#FFFFFF">
+                    <path d="M41 4H7C5.35 4 4 5.35 4 7v34c0 1.65 1.35 3 3 3h34c1.65 0 3-1.35 3-3V7c0-1.65-1.35-3-3-3zM17.3 36.3h-6v-18h6v18zm-3-20.5c-2 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7 3.7 1.7 3.7 3.7-1.7 3.7-3.7 3.7zM36.3 36.3h-6v-8.7c0-2.05-.55-3.45-2.7-3.45-1.9 0-2.7 1.3-2.7 3.45v8.7h-6v-18h6v2.5c.8-1.5 2.6-2.5 4.5-2.5 3.25 0 6.2 2.05 6.2 7v11z"/>
+                </svg>
+            </a>
+        </div>
+    
+        <!-- Contato e Copyright -->
+        <div class="footer-content" id="contact" style="margin-bottom: 15px;">
+            <p>Telefone: <a href="tel:+5511999999999" style="color: #00bfff; text-decoration: none;">+55 (11) 99999-9999</a></p>
+            <p>Entre em contato: <a href="mailto:suporte@clientease.com" style="color: #00bfff; text-decoration: none;">suporte@clientease.com</a></p>           
+            <p>&copy; 2024 ClientEase - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+  
+    
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        toggleButton.addEventListener('click', () => {
+          menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+      </script>
+    
+</body>
+</html>
